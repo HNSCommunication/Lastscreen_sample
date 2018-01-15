@@ -3,7 +3,7 @@
 * 라스트스크린을 안드로이드 어플리케이션에 연동하기 위한 라이브러리
 * 안드로이드 버전 지원 : Android 2.3(API Level 9) 이상 (com.android.support:appcompat-v7 사용 필수)
 * 연동을 하기 위해 발급받아야 하는 키
-* `sdk_key` : 뉴스크린 담당자에게 발급 받아야합니다 (테스트 sdk_key : d67d8ab4f4c10bf22aa353e27879133c)
+* `sdk_key` : 라스트스크린 담당자에게 발급 받아야합니다 (테스트 sdk_key : d67d8ab4f4c10bf22aa353e27879133c)
 
 
 ## 라스트스크린 SDK 연동 가이드 - 기본
@@ -120,8 +120,8 @@
 
 
 
-### 2. 뉴스크린 호출
-- 뉴스크린을 호출하기 위해서는 `sdk_key`를 발급 받아야 합니다.
+### 2. 라스트스크린 호출
+- 라스트스크린을 호출하기 위해서는 `sdk_key`를 발급 받아야 합니다.
 
 ```Java
 public class MainActivity extends AppCompatActivity {
@@ -150,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 
-- 자사 라스트스크린 담당자에게 뉴스크린 및 알림바 콘텐츠 노출 요청 승인이 되어야 실행 됩니다.
+- 자사 라스트스크린 담당자에게 라스트스크린 노출 요청 승인이 되어야 실행 됩니다.
 - 광고 준비가 완료 된 후 앱이 종료되는 시점에 showAD()를 호출하면 광고가 Display됩니다.
 
 
