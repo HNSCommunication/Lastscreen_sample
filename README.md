@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 - 자사 라스트스크린 담당자에게 라스트스크린 노출 요청 승인이 되어야 실행 됩니다.
-- 광고 준비가 완료 된 후 앱이 종료되는 시점에 showAD()를 호출하면 광고가 Display됩니다.
+- 앱이 종료되는 시점에 showAD()를 호출하면 광고가 Display됩니다.
 
 
 - 콜백 메시지 
