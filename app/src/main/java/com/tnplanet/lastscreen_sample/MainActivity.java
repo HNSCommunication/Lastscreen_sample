@@ -19,9 +19,9 @@ public class MainActivity extends AppCompatActivity {
         mainTv = findViewById(R.id.main_tv);
 
         lastscreenAD = new LastscreenAD(MainActivity.this);
-        lastscreenAD.setInitCallBack(new LastscreenAD.InitCallBack() {
+        lastscreenAD.setInitCallBack(new LastscreenAD.LastscreenInitCallBack() {
             @Override
-            public void initCallBack(boolean valid, String msg) {   //호출
+            public void initCallBack(boolean valid, String msg) {   //광고 준비
                 Log.d("MainActivity", "LastscreenCallBack : "+valid+" / "+msg);
                 mainTv.setText(msg);
             }
@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        lastscreenAD.showAD();
-        super.onBackPressed();
+        lastscreenAD.showAD(getSupportFragmentManager());   //광고 호출(앱 종료 시점)
     }
 }
