@@ -10,11 +10,10 @@
 
 ### 1. 설정
 
-#### lastscreen_sample 프로젝트를 다운로드 합니다. 아래 4개 파일을 확인합니다
-- lastscreen_x.x.jar : 라스트스크린 jar 파일 (lastscreen_x.x > lastscreen_x.x.jar)
-- AndroidManifest.xml : 라스트스크린 메니페스트 샘플 파일 (app > src > main > AndroidManifest.xml)
-- lastscreen_activity.xml : 라스트스크린 레이아웃 파일 (app > src > main > res > layout > lastscreen_activity.xml)
-- lastscreen_close_ic.png : 라스트스크린 닫기버튼 이미지 파일 (app > src > main > res > drawable > lastscreen_close_ic.png)
+#### lastscreen_sdk_x.x.zip 파일을 다운로드 합니다. 아래 3개 파일을 확인합니다
+- lastscreen_x.x.jar : 라스트스크린 jar 파일
+- lastscreen_activity.xml : 라스트스크린 레이아웃 파일
+- lastscreen_close_ic.png : 라스트스크린 닫기버튼 이미지 파일
 
 
 #### 안드로이드 프로젝트에 `lastscreen_x.x.jar` 을 import 합니다
