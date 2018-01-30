@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
                 mainTv.setText(msg);
             }
         });
-        lastscreenAD.init("test_sdk_key");                              //광고 준비
+        lastscreenAD.init("sdk_key");                              //광고 준비
     }
 
     @Override
