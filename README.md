@@ -69,40 +69,13 @@
 
 ```Xml
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
-
-    <ProgressBar
-        android:id="@+id/lastscreen_webView_progressBar"
-        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="1dp" />
-
-    <WebView
-        android:id="@+id/lastscreen_webView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/lastscreen_webView_progressBar"
-        android:background="#00000000">
-
-    </WebView>
-
-    <ImageButton
-        android:id="@+id/lastscreen_close_btn"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/lastscreen_close_ic" />
-
+    android:id="@+id/lastscreen_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    
 </RelativeLayout>
-
 ```
 
 #### `lastscreen_close_ic.png` 파일을 res > drawable 폴더에 복사 합니다
@@ -132,10 +105,11 @@ public class MainActivity extends AppCompatActivity {
 
 
         lastscreenAD = new LastscreenAD(MainActivity.this);
-        lastscreenAD.setInitCallBack(new LastscreenAD.InitCallBack() {  //광고 호출 콜백 함수
+        lastscreenAD.setInitCallBack(new LastscreenAD.LastscreenInitCallBack() {
             @Override
             public void initCallBack(boolean valid, String msg) {   
                 Log.d("MainActivity", "LastscreenCallBack : "+valid+" / "+msg);
+                mainTv.setText(msg);
             }
         });
         lastscreenAD.init("test_sdk_key");                              //광고 준비
@@ -144,7 +118,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         lastscreenAD.showAD();                                          //광고 Display(앱이 종료되는 시점)
-        super.onBackPressed();
     }
 }
 ```
