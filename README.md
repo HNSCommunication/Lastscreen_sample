@@ -112,12 +112,12 @@ public class MainActivity extends AppCompatActivity {
                 mainTv.setText(msg);
             }
         });
-        lastscreenAD.init("test_sdk_key");                              //광고 준비
+        lastscreenAD.init("sdk_key");                              //광고 준비
     }
 
     @Override
     public void onBackPressed() {
-        lastscreenAD.showAD();                                          //광고 Display(앱이 종료되는 시점)
+        lastscreenAD.showAD(getSupportFragmentManager());              //광고 Display(앱이 종료되는 시점)
     }
 }
 ```
