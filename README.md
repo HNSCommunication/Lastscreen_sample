@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        lastscreenAD.showAD(getSupportFragmentManager());              //광고 Display(앱이 종료되는 시점)
+        lastscreenAD.showAD(getFragmentManager());              //광고 Display(앱이 종료되는 시점)
     }
 }
 ```
