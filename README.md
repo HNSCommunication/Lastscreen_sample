@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
 
 - 자사 라스트스크린 담당자에게 라스트스크린 노출 요청 승인이 되어야 실행 됩니다.
 - 앱이 종료되는 시점에 showAD()를 호출하면 광고가 Display됩니다.
-- setActivityClose(true / false) : 광고 종료 후 현재 액티비티 종료 여부 설정입니다. 디폴트값 true로 설정되어있습니다.
+- setActivityClose(true / false) : 광고 종료 후 현재 액티비티 종료 여부 설정입니다. 디폴트값 true로 설정되어있습니다. LastscreenFinishCallBack 이 설정되어 있지 않은경우에만 유효 합니다.
 
 
 - 콜백 메시지 
@@ -148,4 +148,5 @@ public class MainActivity extends AppCompatActivity {
 
 
 ### 3. 버전 정보 
-- 1.4(180323) : 광고 종료 후 현재 액티비티 종료 여부 설정사항 추가 하였습니다.
+- 1.4(180323) : 광고 종료 후 현재 액티비티 종료 여부 설정사항 추가 하였습니다. LastscreenFinishCallBack 이 설정되어 있지 않은경우에만 유효 합니다.
+
