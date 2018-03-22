@@ -21,11 +21,19 @@ public class MainActivity extends AppCompatActivity {
         lastscreenAD = new LastscreenAD(MainActivity.this);
         lastscreenAD.setInitCallBack(new LastscreenAD.LastscreenInitCallBack() {
             @Override
-            public void initCallBack(boolean valid, String msg) {   //광고 준비
+            public void initCallBack(boolean valid, String msg) {   //광고 준비 콜백
                 Log.d("MainActivity", "LastscreenCallBack : "+valid+" / "+msg);
                 mainTv.setText(msg);
             }
         });
+        lastscreenAD.setInitFinishCallBack(new LastscreenAD.LastscreenFinishCallBack() {
+            @Override
+            public void finishCallBack() {
+                //광고 종료 콜백
+            }
+        });
+
+        lastscreenAD.setActivityClose(true);    //광고 종료 후 현재 액티비티 종료 여부(default : true)
         lastscreenAD.init("test_sdk_key");
     }
 
