@@ -150,5 +150,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 ### 3. 버전 정보 
-- 1.4(180323) : 광고 종료 후 현재 액티비티 종료 여부 설정사항 추가 하였습니다. LastscreenFinishCallBack 이 설정되어 있지 않은경우에만 유효 합니다.
+# 1.4(180323)
+- 광고 종료 후 현재 액티비티 종료 여부 설정사항 추가 하였습니다. LastscreenFinishCallBack 이 설정되어 있지 않은경우에만 유효 합니다. 
+- 광고 종료 코드 추가.
 
