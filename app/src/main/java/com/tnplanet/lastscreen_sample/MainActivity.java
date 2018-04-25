@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void finishCallBack() {
                 //광고 종료 콜백
+                Log.d("MainActivity","finishCallBack");
+                finish();
             }
         });
 
