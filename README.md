@@ -154,3 +154,8 @@ public class MainActivity extends AppCompatActivity {
 - 광고 종료 후 현재 액티비티 종료 여부 설정사항 추가 하였습니다. LastscreenFinishCallBack 이 설정되어 있지 않은경우에만 유효 합니다. 
 - 광고 종료 코드 추가.
 
+#### 1.5(180423)
+- 광고 노출 후, 광고 내 이동이 원활하지 않은 현상 수정
+
+#### 1.6(180424)
+- LastscreenInitCallBack에서 바로 광고를 show 하는경우 발생하는 문제 수정
