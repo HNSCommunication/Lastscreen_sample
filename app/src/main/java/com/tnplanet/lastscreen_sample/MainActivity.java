@@ -34,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
-
-        lastscreenAD.setActivityClose(true);    //광고 종료 후 현재 액티비티 종료 여부(default : true)
+        lastscreenAD.setShowAnimation(true);    //광고 노출 애니매이션 여부 (default : false)
+        lastscreenAD.setActivityClose(true);    //광고 종료 후 현재 액티비티 종료 여부 (default : true)
         lastscreenAD.init("test_sdk_key");
     }
 
