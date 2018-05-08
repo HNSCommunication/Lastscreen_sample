@@ -120,6 +120,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        lastscreenAD.setShowAnimation(true);    //광고 노출 애니매이션 여부 (default : false)
         lastscreenAD.setActivityClose(true);    //광고 종료 후 현재 액티비티 종료 여부(default : true)
         lastscreenAD.init("sdk_key");           //광고 준비
     }
@@ -135,7 +136,9 @@ public class MainActivity extends AppCompatActivity {
 - 자사 라스트스크린 담당자에게 라스트스크린 노출 요청 승인이 되어야 실행 됩니다.
 - 앱이 종료되는 시점에 showAD()를 호출하면 광고가 Display됩니다.
 - setActivityClose(true / false) : 광고 종료 후 현재 액티비티 종료 여부 설정입니다. 디폴트값 true로 설정되어있습니다. LastscreenFinishCallBack 이 설정되어 있지 않은경우에만 유효 합니다.
+- setShowAnimation(true / false) : 광고 노출시 애니메이션 설정
 - lastscreenAD.closesAD() : 광고 종료
+
 
 
 - 콜백 메시지 
@@ -159,3 +162,6 @@ public class MainActivity extends AppCompatActivity {
 
 #### 1.6(180424)
 - LastscreenInitCallBack에서 바로 광고를 show 하는경우 발생하는 문제 수정
+
+#### 1.7(180502)
+- 광고 노출 애니매이션 적용
